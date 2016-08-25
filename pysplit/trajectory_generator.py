@@ -146,7 +146,7 @@ def generate_bulktraj(basename, hysplit_working, output_dir, meteo_dir, years,
                     _cliptraj_whilegen(output_cdir, trajname)
 
                 # Move the trajectory file to output directory
-                os.rename(trajname, final_trajpath)
+                os.rename(hysplit_working+trajname, final_trajpath)
 
     # Revert current working directory
     finally:
